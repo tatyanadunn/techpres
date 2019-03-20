@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="sidenav">
+<a href="{{ url_for('welcome') }}">Welcome</a>
+<a href="{{ url_for('another') }}">Hello</a>
+<a href="{{url_for('public')}}">Public</a>
+<a href="{{ url_for('private') }}">Private</a>
+<a href="{{ url_for('logout') }}">Logout</a>
+</div>
+
+<div class="main">
+  <h2>Blobsite</h2>
+
+</div>
+
+{% endblock %}
